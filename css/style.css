@@ -1,35 +1,50 @@
+@font-face {
+    font-family: OpenSans;
+    src: local("Open Sans"), url(../fonts/2211.ttf);
+   }
+
 *{
 	margin: 0;
 	padding: 0;
 }
+
 body{
 	background: #f9f9f9;
 }
+
 .wrapper{
 	width: 1060px;
 	height: 100%;
 	margin: 0 auto;
 	border: solid 1px #dbdbdb;
 	background: white;
+	font-family: 'OpenSans';
 }
+
+/*HEADER*/
 header{
 	margin-left: 44px;
 }
+
 .logo{
 	width: 145px;
 	height: 40px;
 	margin-top: 50px;
 	background-image: url(../img/logo.png);
 }
+
 .menu{
 	width: 966px;
-	height: 40px;
+	/*height: 40px;*/
+	padding-bottom: 10px;
 	margin-top: 40px;
 	background-image: url(../img/menu.png);
 	}
+
+/*CONTENT*/	
 nav ul {
 	list-style: none;	
-	padding: 8px;    
+	padding-top: 10px;    
 }
 
 nav ul li {
@@ -39,26 +54,29 @@ nav ul li {
 nav ul li a {
 	text-decoration: none;
 	margin: 0;
-	padding: 10px 30px;
+	padding: 12px 30px;
 	color: white;
-	font: 16px 'Open-Sans';
+	font: 16px;
 }
+
 nav ul li a:hover {
     background-image: url(../img/chosen.png);
-    border-left: 1px solid white;
-    border-right: 1px solid white;
+    border-left: 1px solid #838383;
+    border-right: 1px solid #838383;
     color: #fff;
-    padding: 10px 30px;
-}
+ }
+
 .sidebar{
 	margin-left: 44px;
 	margin-top: 40px;
 	width: 240px;	
 	padding: 0; 
-	border: 1px solid #c8c8c8;
+	border-left: 1px solid #c8c8c8;
+	border-right: 1px solid #c8c8c8;
 	list-style: none; 
 	float: left;
 }
+
 .sidebar ul li a {
 	text-decoration: none;
 	margin: 0;
@@ -66,30 +84,59 @@ nav ul li a:hover {
 	border-top: 1px solid #c8c8c8;
 	color: #656363;
 	list-style: none;	
-	font: 16px 'Open-Sans';
+	font: 16px;
 	display: block; 
-
 }
+
 ul li{
 	list-style: none;
 }
+
 .sidebar ul li a:hover {
     color: #2c2c2c;
     padding: 10px 30px;
 }
+
+.sidebar ul li:last-child{
+	border-bottom: 1px solid #c8c8c8;
+}
+
 .content{
 	margin-left: 49px;
 	margin-top: 40px;
-	width: 678px;
-	height: 400px;
-	float: left;	
+	margin-right: 47px;
+	width: 678px;	
+	float: right;	
 }
-.text{
+
+p{
 	padding: 40px 24px;
 }
-.menu_footer{
+
+/*FOOTER*/
+footer{
 	width: 966px;
 	height: 40px;
 	background-color: #e1e1e1;
+	clear: both;
+	margin-left: 44px;
+}
 
+footer ul li{
+	display: inline-block;
+	list-style: none;
+	padding: 10px 40px;
+}
+
+footer ul li a{
+	text-decoration: none;
+	color: black;
+}
+
+.rights{
+	float: right;
+}
+
+footer ul li a:hover{
+	text-decoration: underline;
 }
