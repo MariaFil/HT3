@@ -3,16 +3,16 @@
     src: local("Open Sans"), url(../fonts/2211.ttf);
    }
 
-*{
+* {
 	margin: 0;
 	padding: 0;
 }
 
-body{
+body {
 	background: #f9f9f9;
 }
 
-.wrapper{
+.wrapper {
 	width: 1060px;
 	height: 100%;
 	margin: 0 auto;
@@ -22,51 +22,48 @@ body{
 }
 
 /*HEADER*/
-header{
+header {
 	margin-left: 44px;
 }
 
-.logo{
+.logo {
 	width: 145px;
 	height: 40px;
 	margin-top: 50px;
 	background-image: url(../img/logo.png);
 }
 
-.menu{
-	width: 966px;
-	/*height: 40px;*/
-	padding-bottom: 10px;
-	margin-top: 40px;
+.menu {
+	width: 946px;	
 	background-image: url(../img/menu.png);
-	}
-
-/*CONTENT*/	
-nav ul {
-	list-style: none;	
-	padding-top: 10px;    
+	margin-top: 40px;
+	padding-left: 20px;
 }
 
-nav ul li {
-    display: inline-block;    
+
+nav  {		
+	padding: 9px 0;    
+	display: inline-block; 
 }
 
-nav ul li a {
-	text-decoration: none;
-	margin: 0;
-	padding: 12px 30px;
+nav a {
+	padding: 9px 30px;
+	text-decoration: none;	
 	color: white;
 	font: 16px;
+	border-left: 1px solid rgba(1,1,1,0);
+    border-right: 1px solid rgba(1,1,1,0);
 }
 
-nav ul li a:hover {
+nav a:hover {
     background-image: url(../img/chosen.png);
     border-left: 1px solid #838383;
     border-right: 1px solid #838383;
     color: #fff;
  }
 
-.sidebar{
+/*CONTENT*/	
+.sidebar {
 	margin-left: 44px;
 	margin-top: 40px;
 	width: 240px;	
@@ -88,7 +85,7 @@ nav ul li a:hover {
 	display: block; 
 }
 
-ul li{
+ul li {
 	list-style: none;
 }
 
@@ -97,11 +94,11 @@ ul li{
     padding: 10px 30px;
 }
 
-.sidebar ul li:last-child{
+.sidebar ul li:last-child {
 	border-bottom: 1px solid #c8c8c8;
 }
 
-.content{
+.content {
 	margin-left: 49px;
 	margin-top: 40px;
 	margin-right: 47px;
@@ -109,12 +106,12 @@ ul li{
 	float: right;	
 }
 
-p{
+p {
 	padding: 40px 24px;
 }
 
 /*FOOTER*/
-footer{
+footer {
 	width: 966px;
 	height: 40px;
 	background-color: #e1e1e1;
@@ -122,21 +119,21 @@ footer{
 	margin-left: 44px;
 }
 
-footer ul li{
+footer ul li {
 	display: inline-block;
 	list-style: none;
 	padding: 10px 40px;
 }
 
-footer ul li a{
+footer ul li a {
 	text-decoration: none;
 	color: black;
 }
 
-.rights{
+.rights {
 	float: right;
 }
 
-footer ul li a:hover{
+footer ul li a:hover {
 	text-decoration: underline;
 }
